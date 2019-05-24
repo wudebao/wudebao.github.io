@@ -25,6 +25,18 @@
                                 </a>
                             </li>
                     {% endif %}
+
+                    {% if site.juejin_username %}
+                    <li>
+                        <a target="_blank" href="https://juejin.im/user/{{ site.juejin_username }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-stack-1x fa-inverse">倔</i>
+                            </span>
+                        </a>
+                    </li>
+                    {% endif %}
+
                     {% if site.twitter_username %}
                     <li>
                         <a href="https://twitter.com/{{ site.twitter_username }}">
@@ -50,18 +62,6 @@
                     {% if site.weibo_username %}
                     <li>
                         <a target="_blank" href="http://weibo.com/{{ site.weibo_username }}">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                    {% endif %}
-
-
-                    {% if site.juejin_username %}
-                    <li>
-                        <a target="_blank" href="https://juejin.im/user/{{ site.juejin_username }}">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
